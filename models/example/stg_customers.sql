@@ -1,3 +1,4 @@
+{{ config(materialized='view') }}
 with stg_customers as (
    select custid,
     concat(fname, ' ', lname) as customer_name,
